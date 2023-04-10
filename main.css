@@ -1,0 +1,432 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&family=Ubuntu+Mono&display=swap');
+
+/* CSS Document */
+*{
+	font-family: 'Roboto', sans-serif;
+}
+/*Remove this rule on your HTML elements as you start to fill them with content*/
+
+.box-color {
+	color: #000000;
+	background: #FFAACC;
+	text-align: center;
+	font-style: italic;
+	margin: 0;
+}
+.box-color1 {
+	color: #000000;
+	background: #F77783;
+	text-align: center;
+	font-style: italic;
+	margin: 0;
+}
+
+.box-color2 {
+	color: #ffffff;
+	background: #000000;
+	text-align: center;
+	font-style: italic;
+	margin: 0;
+}
+
+/*basic reset*/
+
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav { 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img { 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body {
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+}
+
+/* Remove underlines from links */
+
+a {
+	text-decoration: none;
+	color: #dddddd;
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden {
+	display: none;
+}
+
+.contact-form-container {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+  }
+  
+  h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+  }
+  
+  form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 5px solid #000000;
+	padding: 50px;
+  }
+  
+  .form-group {
+	width: 100%;
+	margin-bottom: 10px;
+  }
+  
+  label {
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	width: 100%;
+	padding: 10px;
+	border: 5px solid #000000;
+	border-radius: 5px;
+	font-size: 20px;
+	font-family: Ubuntu, sans-serif;
+	text-align: center;
+  }
+  
+  textarea {
+	height: 100px;
+  }
+  
+  button[type="submit"] {
+	background-color: #000000;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #005F6B;
+  }
+  
+/*Common page elements  */
+
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 1920px.
+1920px would fit a large monitor or tv. Sizes will vary depending on the projects
+you work on and the intended audience */
+
+#container {
+	margin: 0 auto;
+	width: 1920px;
+}
+
+/* this is our grid based off of our XD file */
+.grid-con {
+	display: grid;
+	grid-template-columns: repeat(12, 122px);
+	grid-column-gap: 16px;
+	padding-left: 140px;
+	padding-right: 140px;
+	font-size: 30px;
+	text-align: center;
+	
+	
+}
+main{
+	margin: 2rem 0 0 0 ;
+}
+#header-con {
+	background-color: #ddd;
+	padding-top: 10px;          
+	padding-bottom: 10px;
+	grid-column: 1px / 11px; 
+	height: 10px;
+	transition: all 0.3s;
+	color: #ddd;
+	
+}
+
+nav ul {
+	list-style:upper-alpha;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+  }
+  
+  nav li {
+	display:inline-block;
+	margin-right: 10px;
+	font-size: 35px;
+  }
+  
+  nav li:last-child {
+	margin-right: 0px;
+  }
+  
+  nav a {
+	display: block;
+	padding: 50px;
+	color: #000000;
+	text-decoration: none;
+  }
+  
+  nav a:hover {
+	position: relative;
+	background-color: #000000;
+	color: #ffffff;
+  }
+
+/* Specific to index page desktop  */
+
+#hero {
+	margin-top: 100px;
+}
+
+#hero-text {
+	grid-column: 1/8;
+	/* Remove as content will dictate height */
+	height: 582px;
+	font-size: 35px;
+	
+}
+
+#hero-image {
+	grid-column: 8/-1;
+	/* Remove as content will dictate height */
+	height: 582px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 30px;
+	font-weight: 600;
+	color: #ffffff;
+	background-color: #000000;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: all 0.7s ease;
+  }
+  
+  .btn:hover {
+	background-color: #ffffff;
+	color: #000000;
+	transform: translateY(-10px);
+  }
+  
+  .btn:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+#products {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-size: 50px;
+}
+
+#products h2 {
+	grid-column: 1/-1;
+	text-align: center;
+}
+
+#product1 {
+	grid-column: 1/5;
+	/* Remove as content will dictate height */
+	height: 507px;
+}
+
+#product2 {
+	grid-column: 5/9;
+	/* Remove as content will dictate height */
+	height: 507px;
+}
+
+#product3 {
+	grid-column: 9/-1;
+	/* Remove as content will dictate height */
+	height: 507px;
+}
+
+.product-box {
+	background-color: #A1E5F3;
+}
+
+#about-con {
+	background-color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#about-title {
+	text-align: center;
+}
+
+#about-text {
+	grid-column: 1/8;
+	/* Remove as content will dictate height */
+	height: 700px;
+}
+
+#about-image {
+	grid-column: 8/-1;
+	/* Remove as content will dictate height */
+	height: 700px;
+}
+
+#contact {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#contact-text {
+	grid-column: 1/8;
+	/* Remove as content will dictate height */
+	height: 700px;
+}
+
+#contact-form {
+	grid-column: 8/-1;
+	/* Remove as content will dictate height */
+	
+}
+
+/*Common page elements  */
+
+#footer-con {
+	background-color: #000000;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+
+
+
+#footer-nav {
+	grid-column: 1/4;
+	/* Remove as content will dictate height */
+	height: 100px;
+	margin-bottom: 60px;
+	font-size: 40px;
+	background-color: #000000;
+}
+
+
+#footer-newsletter1 {
+	grid-column: 4/8;
+	/* Remove as content will dictate height */
+	height: 80px;
+	font-size: 50px;
+	background-color: #000000;
+}
+
+#footer-newsletter2 {
+	grid-column: 4/8;
+	/* Remove as content will dictate height */
+	/* height: 40px; */
+	background-color: #000000;
+
+}
+#address {
+	grid-column: 1/4;
+	background-color: #000000;
+	height: 80px;
+}
+
+#footer-social {
+	grid-column: 8/-1;
+	/* Remove as content will dictate height */
+	height: 30px;
+	display: inline-block;
+	margin-bottom: 50px;
+		font-size: 50px;
+		background-color: #000000;
+		
+}
+#footer-social img {
+	height: 80px;
+	width: 80px;
+}
+
+
+/* gallery page */
+
+#gallery-hero-con {
+	background-color: #aaaaaa;
+	
+	background: linear-gradient(to top, #000000, rgba(215, 213, 213, 0.282) 50%),
+	url("../images/Cover_Pic_FIP.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 580px;
+}
+
+#gallery-text {
+	grid-column: 1/9;
+	/* Remove as content will dictate height */
+	height: 200px;
+	margin-top: 100px;
+}
+
+#gallery-controls {
+	margin-top: 200px;
+	grid-column: 6/8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dot {
+	background-color: #dddddd;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin: 5px;
+  }
+
+#gallery h2 {
+	grid-column: 1/-1;
+	text-align: center;
+  }
+
+.gallery-box {
+	background-color:#A1E5F3;
+	grid-column: span 4 / span 4;
+	/* Remove as content will dictate height */
+	height: 507px;
+	margin-bottom: 20px;
+}
+p {
+	margin-bottom: 20px;
+	font-size: 40px;
+	color:#000000;
+ }
+hr{
+	width: 500px;
+	background-color: #000000;
+}
+
+span{
+	color: #dddddd;
+}
