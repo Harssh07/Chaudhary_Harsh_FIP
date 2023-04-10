@@ -1,0 +1,2 @@
+[4/8/2023, 10:45:24 p.m.] layer "oreo_cheesecake.jpg": Duplicate path: oreo_cheesecake.jpg
+[4/8/2023, 10:45:24 p.m.] layer "oreo_cheesecake.jpg": Duplicate path: oreo_cheesecake.jpg
